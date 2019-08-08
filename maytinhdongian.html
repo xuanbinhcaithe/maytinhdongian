@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung may tinh nang cao</title>
+    <script>
+        function disPlay(kytu) {
+            document.getElementById("result").value += kytu;
+        }
+        function reset() {
+            document.getElementById("result").value = null;
+        }
+        function ketqua() {
+            var a = eval(document.getElementById("result").value);
+            document.getElementById("result").value = a;
+        }
+    </script>
+</head>
+<body>
+<fieldset style="width: 40px;">
+    <input style="height: 30px" type="text" id="result"/>
+
+    <button style="width: 40px; height: 30px" value="7" onclick="disPlay('7');">7</button>
+    <button style="width: 40px; height: 30px" value="8" onclick="disPlay('8');">8</button>
+    <button style="width: 40px; height: 30px" value="9" onclick="disPlay('9');">9</button>
+    <button style="width: 40px; height: 30px" value="+" onclick="disPlay('+');">+</button>
+
+    <button style="width: 40px; height: 30px" value="4" onclick="disPlay('4');">4</button>
+    <button style="width: 40px; height: 30px" value="5" onclick="disPlay('5');">5</button>
+    <button style="width: 40px; height: 30px" value="6" onclick="disPlay('6');">6</button>
+    <button style="width: 40px; height: 30px" value="-" onclick="disPlay('-');">-</button>
+
+    <button style="width: 40px; height: 30px" value="1" onclick="disPlay('1');">1</button>
+    <button style="width: 40px; height: 30px" value="2" onclick="disPlay('2');">2</button>
+    <button style="width: 40px; height: 30px" value="3" onclick="disPlay('3');">3</button>
+    <button style="width: 40px; height: 30px" value="*" onclick="disPlay('*');">*</button>
+
+    <button style="width: 40px; height: 30px" value="0" onclick="disPlay('0');">0</button>
+    <button style="width: 40px; height: 30px" onclick="reset();">AC</button>
+    <button style="width: 40px; height: 30px" onclick="ketqua();">=</button>
+    <button style="width: 40px; height: 30px" value="/" onclick="disPlay('/');">/</button>
+
+</fieldset>
+</body>
+</html>
